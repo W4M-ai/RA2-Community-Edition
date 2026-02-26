@@ -1,33 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5A9FE6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3A7BC8;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,255,255,0.15);stop-opacity:1" />
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
-    </linearGradient>
-  </defs>
-
-  <!-- Background rounded rectangle -->
-  <rect x="0" y="0" width="1000" height="1000" rx="200" ry="200" fill="url(#bg)" />
-
-  <!-- Subtle top shine overlay -->
-  <rect x="0" y="0" width="1000" height="500" rx="200" ry="200" fill="white" opacity="0.08" />
-
-  <!-- Radio wave arcs above text -->
-  <g transform="translate(500, 330)" stroke="white" fill="none" stroke-linecap="round">
-    <path d="M-40,0 A40,40 0 0,1 40,0" stroke-width="18" opacity="0.35" />
-    <path d="M-80,-10 A80,80 0 0,1 80,-10" stroke-width="16" opacity="0.5" />
-    <path d="M-125,-20 A125,125 0 0,1 125,-20" stroke-width="14" opacity="0.7" />
+  <!-- Radio wave arcs -->
+  <g transform="translate(500, 300)" stroke="#4A90D9" fill="none" stroke-linecap="round">
+    <path d="M-60,0 A60,60 0 0,1 60,0" stroke-width="28" opacity="0.5" />
+    <path d="M-120,-15 A120,120 0 0,1 120,-15" stroke-width="24" opacity="0.7" />
+    <path d="M-185,-30 A185,185 0 0,1 185,-30" stroke-width="20" opacity="0.9" />
   </g>
 
   <!-- RA2 text -->
-  <text x="500" y="620" text-anchor="middle" fill="white"
+  <text x="500" y="650" text-anchor="middle" fill="#4A90D9"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="320" font-weight="700" letter-spacing="10">RA2</text>
+        font-size="360" font-weight="800" letter-spacing="10">RA2</text>
 
-  <!-- Subtle underline accent -->
-  <rect x="250" y="680" width="500" height="8" rx="4" fill="white" opacity="0.4" />
+  <!-- Underline accent -->
+  <rect x="220" y="720" width="560" height="12" rx="6" fill="#4A90D9" opacity="0.5" />
 </svg>

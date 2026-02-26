@@ -1,33 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5A9FE6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3A7BC8;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,255,255,0.15);stop-opacity:1" />
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
-    </linearGradient>
-  </defs>
-
-  <!-- Background rounded rectangle -->
-  <rect x="0" y="0" width="1000" height="1000" rx="200" ry="200" fill="url(#bg)" />
-
-  <!-- Subtle top shine overlay -->
-  <rect x="0" y="0" width="1000" height="500" rx="200" ry="200" fill="white" opacity="0.08" />
-
-  <!-- Radio wave arcs above text -->
-  <g transform="translate(500, 330)" stroke="white" fill="none" stroke-linecap="round">
-    <path d="M-40,0 A40,40 0 0,1 40,0" stroke-width="18" opacity="0.35" />
-    <path d="M-80,-10 A80,80 0 0,1 80,-10" stroke-width="16" opacity="0.5" />
-    <path d="M-125,-20 A125,125 0 0,1 125,-20" stroke-width="14" opacity="0.7" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960">
+  <!-- Center hub -->
+  <circle cx="480" cy="420" r="60" fill="#4A90D9"/>
+  <!-- Fan blades (4 blades rotated) -->
+  <g fill="#4A90D9" opacity="0.85">
+    <ellipse cx="480" cy="220" rx="60" ry="160" transform="rotate(0,480,420)"/>
+    <ellipse cx="680" cy="420" rx="160" ry="60" transform="rotate(0,480,420)"/>
+    <ellipse cx="480" cy="620" rx="60" ry="160" transform="rotate(0,480,420)"/>
+    <ellipse cx="280" cy="420" rx="160" ry="60" transform="rotate(0,480,420)"/>
   </g>
-
-  <!-- RA2 text -->
-  <text x="500" y="620" text-anchor="middle" fill="white"
-        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="320" font-weight="700" letter-spacing="10">RA2</text>
-
-  <!-- Subtle underline accent -->
-  <rect x="250" y="680" width="500" height="8" rx="4" fill="white" opacity="0.4" />
+  <!-- Down rod -->
+  <rect x="470" y="80" width="20" height="140" fill="#4A90D9"/>
+  <!-- Ceiling mount -->
+  <path d="M430 80h100l10-30H420z" fill="#4A90D9"/>
 </svg>

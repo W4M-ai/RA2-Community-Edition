@@ -1,33 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5A9FE6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3A7BC8;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,255,255,0.15);stop-opacity:1" />
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
-    </linearGradient>
-  </defs>
-
-  <!-- Background rounded rectangle -->
-  <rect x="0" y="0" width="1000" height="1000" rx="200" ry="200" fill="url(#bg)" />
-
-  <!-- Subtle top shine overlay -->
-  <rect x="0" y="0" width="1000" height="500" rx="200" ry="200" fill="white" opacity="0.08" />
-
-  <!-- Radio wave arcs above text -->
-  <g transform="translate(500, 330)" stroke="white" fill="none" stroke-linecap="round">
-    <path d="M-40,0 A40,40 0 0,1 40,0" stroke-width="18" opacity="0.35" />
-    <path d="M-80,-10 A80,80 0 0,1 80,-10" stroke-width="16" opacity="0.5" />
-    <path d="M-125,-20 A125,125 0 0,1 125,-20" stroke-width="14" opacity="0.7" />
-  </g>
-
-  <!-- RA2 text -->
-  <text x="500" y="620" text-anchor="middle" fill="white"
-        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="320" font-weight="700" letter-spacing="10">RA2</text>
-
-  <!-- Subtle underline accent -->
-  <rect x="250" y="680" width="500" height="8" rx="4" fill="white" opacity="0.4" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960">
+  <!-- Wall switch plate -->
+  <rect x="280" y="130" width="400" height="700" rx="30" fill="none" stroke="#4A90D9" stroke-width="40"/>
+  <!-- Toggle switch -->
+  <rect x="380" y="280" width="200" height="250" rx="20" fill="#4A90D9"/>
+  <!-- Switch indicator dot -->
+  <circle cx="480" cy="380" r="25" fill="white"/>
 </svg>

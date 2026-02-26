@@ -10,5 +10,9 @@
   "pair": [
     { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
     { "id": "add_devices", "template": "add_devices" }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/ra2-light/assets/images/small.png",
+    "large": "/drivers/ra2-light/assets/images/large.png"
+  }
 }
