@@ -1,0 +1,13 @@
+{
+  "name": "com.ra2.bridge",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "homey app build",
+    "deploy": "homey app install",
+    "dev": "homey app run"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

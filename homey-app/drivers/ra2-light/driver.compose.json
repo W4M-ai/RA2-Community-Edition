@@ -1,0 +1,14 @@
+{
+  "name": { "en": "RA2 Dimmable Light" },
+  "class": "light",
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "capabilities": ["onoff", "dim"],
+  "capabilitiesOptions": {
+    "dim": { "min": 0, "max": 1, "step": 0.01 }
+  },
+  "pair": [
+    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
+    { "id": "add_devices", "template": "add_devices" }
+  ]
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project>
+  <ProjectName ProjectName="TestHouse" UUID="1" />
+  <Areas>
+    <Area Name="TestHouse" UUID="3" IntegrationID="0" OccupancyGroupAssignedToID="0" SortOrder="0">
+      <DeviceGroups />
+      <Scenes />
+      <ShadeGroups />
+      <Outputs />
+      <Areas>
+        <Area Name="Kitchen" UUID="100" IntegrationID="10" OccupancyGroupAssignedToID="0" SortOrder="0">
+          <DeviceGroups>
+            <DeviceGroup Name="Island" SortOrder="0">
+              <Devices>
+                <Device Name="Kitchen Pico" UUID="200" SerialNumber="12345678" IntegrationID="50" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+                  <Components>
+                    <Component ComponentNumber="2" ComponentType="BUTTON">
+                      <Button Name="Button 0" UUID="201" Engraving="Center" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" AllowDoubleTap="false" StopIfMoving="false" ProgrammingModelID="202" LedLogic="2" ReverseLedLogic="false">
+                        <Actions><Action Name="Press" ActionType="3"><Presets><Preset Name="Press" UUID="203"><PresetAssignments /></Preset></Presets></Action></Actions>
+                        <Notes />
+                      </Button>
+                    </Component>
+                    <Component ComponentNumber="3" ComponentType="BUTTON">
+                      <Button Name="Button 1" UUID="204" Engraving="Top" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" AllowDoubleTap="false" StopIfMoving="false" ProgrammingModelID="205" LedLogic="2" ReverseLedLogic="false">
+                        <Actions><Action Name="Press" ActionType="3"><Presets><Preset Name="Press" UUID="206"><PresetAssignments /></Preset></Presets></Action></Actions>
+                        <Notes />
+                      </Button>
+                    </Component>
+                    <Component ComponentNumber="4" ComponentType="BUTTON">
+                      <Button Name="Button 2" UUID="207" Engraving="Middle" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" AllowDoubleTap="false" StopIfMoving="false" ProgrammingModelID="208" LedLogic="2" ReverseLedLogic="false">
+                        <Actions><Action Name="Press" ActionType="3"><Presets><Preset Name="Press" UUID="209"><PresetAssignments /></Preset></Presets></Action></Actions>
+                        <Notes />
+                      </Button>
+                    </Component>
+                    <Component ComponentNumber="5" ComponentType="BUTTON">
+                      <Button Name="Button 3" UUID="210" Engraving="Raise" ButtonType="SingleSceneRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" AllowDoubleTap="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="211" LedLogic="4" ReverseLedLogic="false">
+                        <Actions><Action Name="Press" ActionType="3"><Presets><Preset Name="Press" UUID="212"><PresetAssignments /></Preset></Presets></Action><Action Name="Release" ActionType="4"><Presets><Preset Name="Press" UUID="212"><PresetAssignments /></Preset></Presets></Action></Actions>
+                        <Notes />
+                      </Button>
+                    </Component>
+                    <Component ComponentNumber="6" ComponentType="BUTTON">
+                      <Button Name="Button 4" UUID="213" Engraving="Lower" ButtonType="SingleSceneRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" AllowDoubleTap="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="214" LedLogic="4" ReverseLedLogic="false">
+                        <Actions><Action Name="Press" ActionType="3"><Presets><Preset Name="Press" UUID="215"><PresetAssignments /></Preset></Presets></Action><Action Name="Release" ActionType="4"><Presets><Preset Name="Press" UUID="215"><PresetAssignments /></Preset></Presets></Action></Actions>
+                        <Notes />
+                      </Button>
+                    </Component>
+                  </Components>
+                </Device>
+              </Devices>
+            </DeviceGroup>
+          </DeviceGroups>
+          <Scenes />
+          <ShadeGroups />
+          <Outputs>
+            <Output Name="Kitchen Main" UUID="300" IntegrationID="14" OutputType="INC" Wattage="0" SortOrder="0" />
+            <Output Name="Kitchen Fan" UUID="301" IntegrationID="15" OutputType="CEILING_FAN_TYPE" Wattage="0" SortOrder="1" />
+          </Outputs>
+          <Areas />
+        </Area>
+        <Area Name="Theater" UUID="400" IntegrationID="20" OccupancyGroupAssignedToID="0" SortOrder="1">
+          <DeviceGroups>
+            <DeviceGroup Name="Theater Main" SortOrder="0">
+              <Devices />
+            </DeviceGroup>
+          </DeviceGroups>
+          <Scenes />
+          <ShadeGroups />
+          <Outputs>
+            <Output Name="Theater Door Shade" UUID="500" IntegrationID="54" OutputType="SYSTEM_SHADE" Wattage="0" SortOrder="0" />
+            <Output Name="Theater Downlights" UUID="501" IntegrationID="55" OutputType="ELV" Wattage="0" SortOrder="1" />
+          </Outputs>
+          <Areas />
+        </Area>
+      </Areas>
+    </Area>
+  </Areas>
+</Project>

@@ -1,0 +1,23 @@
+# Advanced configuration (optional)
+# Most users only need .env — this file is for power users.
+
+# Override device names
+# device_overrides:
+#   14:
+#     name: "Kitchen Island Lights"
+
+# Exclude specific device IDs
+# exclude_devices: [999]
+
+# Only include specific areas (empty = all areas)
+# include_areas: ["Kitchen", "Master Bedroom"]
+
+# Heartbeat settings
+heartbeat:
+  interval: 30
+  timeout: 10
+
+# Reconnection settings
+reconnect:
+  min_delay: 1
+  max_delay: 60

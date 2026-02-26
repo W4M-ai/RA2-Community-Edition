@@ -1,0 +1,6 @@
+{
+  "settings": {
+    "bridge_host": "Bridge Host",
+    "bridge_port": "Bridge Port"
+  }
+}

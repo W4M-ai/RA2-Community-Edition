@@ -1,0 +1,11 @@
+{
+  "name": { "en": "RA2 Shade" },
+  "class": "blinds",
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "capabilities": ["windowcoverings_set"],
+  "pair": [
+    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
+    { "id": "add_devices", "template": "add_devices" }
+  ]
+}

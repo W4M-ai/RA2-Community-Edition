@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.coverage
+.venv/
+venv/
+
+# Config & secrets
+.env
+config.yaml
+integration-report.xml
+.discovered_repeater
+
+# Docker
+mosquitto-data/
+
+# Node.js
+node_modules/
+
+# Homey
+homey-app/.homeybuild/
+homey-app/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 1em; }
+    label { display: block; margin: 0.8em 0 0.2em; font-weight: 600; }
+    input { width: 100%; padding: 0.5em; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 1em; padding: 0.6em 2em; background: #4A90D9; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #357ABD; }
+    .hint { font-size: 0.85em; color: #666; margin-top: 0.2em; }
+  </style>
+</head>
+<body>
+  <label for="bridge_host">Bridge Host</label>
+  <input type="text" id="bridge_host" placeholder="192.168.1.x">
+  <div class="hint">IP address of the machine running the RA2 Bridge Docker container</div>
+
+  <label for="bridge_port">Bridge Port</label>
+  <input type="number" id="bridge_port" value="8080">
+  <div class="hint">WebSocket port (default: 8080)</div>
+
+  <button id="save">Save</button>
+
+  <script type="text/javascript">
+    function onHomeyReady(Homey) {
+      Homey.get('bridge_host', function(err, val) {
+        if (val) document.getElementById('bridge_host').value = val;
+      });
+      Homey.get('bridge_port', function(err, val) {
+        if (val) document.getElementById('bridge_port').value = val;
+      });
+
+      document.getElementById('save').addEventListener('click', function() {
+        var host = document.getElementById('bridge_host').value;
+        var port = parseInt(document.getElementById('bridge_port').value) || 8080;
+        Homey.set('bridge_host', host);
+        Homey.set('bridge_port', port);
+        Homey.alert('Settings saved! Bridge will reconnect.');
+      });
+
+      Homey.ready();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - mosquitto-data:/mosquitto/data
+    restart: unless-stopped
+
+  ra2-bridge:
+    build: .
+    depends_on:
+      - mosquitto
+    ports:
+      - "${WS_PORT:-8080}:8080"
+    env_file: .env
+    environment:
+      - RA2_HOST=${RA2_HOST}
+      - RA2_PASSWORD=${RA2_PASSWORD:-integration}
+      - MQTT_HOST=mosquitto
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - bridge-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  mosquitto-data:
+  bridge-data:

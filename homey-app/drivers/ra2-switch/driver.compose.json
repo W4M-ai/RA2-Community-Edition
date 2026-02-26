@@ -1,0 +1,11 @@
+{
+  "name": { "en": "RA2 Switch" },
+  "class": "light",
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "capabilities": ["onoff"],
+  "pair": [
+    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
+    { "id": "add_devices", "template": "add_devices" }
+  ]
+}
