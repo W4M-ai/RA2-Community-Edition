@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 1em; }
     label { display: block; margin: 0.8em 0 0.2em; font-weight: 600; }
@@ -23,6 +24,8 @@
 
   <script type="text/javascript">
     function onHomeyReady(Homey) {
+      Homey.ready();
+
       Homey.get('bridge_host', function(err, val) {
         if (val) document.getElementById('bridge_host').value = val;
       });
@@ -37,8 +40,6 @@
         Homey.set('bridge_port', port);
         Homey.alert('Settings saved! Bridge will reconnect.');
       });
-
-      Homey.ready();
     }
   </script>
 </body>
