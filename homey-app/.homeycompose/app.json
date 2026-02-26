@@ -1,11 +1,11 @@
 {
-  "id": "com.ra2.bridge",
+  "id": "com.ra2.bridge.ce",
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": ["local"],
   "brandColor": "#4A90D9",
-  "name": { "en": "Lutron RA2 Bridge" },
+  "name": { "en": "Lutron RA2 Bridge CE" },
   "description": { "en": "Control Lutron RadioRA2 lights, shades, and fans via RA2 Bridge" },
   "category": ["lights"],
   "permissions": [],

@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "com.ra2.bridge",
+      "name": "com.ra2.bridge.ce",
       "dependencies": {
         "ws": "^8.16.0",
       },

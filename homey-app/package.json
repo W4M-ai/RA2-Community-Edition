@@ -1,5 +1,5 @@
 {
-  "name": "com.ra2.bridge",
+  "name": "com.ra2.bridge.ce",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
